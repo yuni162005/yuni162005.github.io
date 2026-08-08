@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Website Saya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Pemrograman Web - Profil Mahasiswa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2563eb;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #2563eb;
+      color: white;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #1e40af;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Selamat Datang di Website Saya!</h1>
-  <p>Halo, nama saya Yuni. Ini website pertama saya.</p>
-  <p>Terima kasih sudah berkunjung!</p>
+  <header>
+    <h1>Tugas Pemrograman Web</h1>
+    <p>Profil Mahasiswa & Jadwal Kuliah</p>
+  </header>
+
+  <div class="container">
+    <h2>Data Mahasiswa</h2>
+    <p><b>Nama:</b> Budi Santoso</p>
+    <p><b>NIM:</b> 12345678</p>
+    <p><b>Prodi:</b> Teknik Informatika</p>
+    <p><b>Universitas:</b> Universitas Semarang</p>
+
+    <h2>Daftar Mata Kuliah Semester Ini</h2>
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Kode MK</th>
+        <th>Nama Mata Kuliah</th>
+        <th>SKS</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>IF101</td>
+        <td>Pemrograman Web</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>IF102</td>
+        <td>Basis Data</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>IF103</td>
+        <td>Struktur Data</td>
+        <td>3</td>
+      </tr>
+    </table>
+
+    <button onclick="sapa()">Klik Saya</button>
+    <p id="pesan"></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 - Tugas Pemrograman Web</p>
+  </footer>
+
+  <script>
+    function sapa() {
+      document.getElementById("pesan").innerText = "Semangat mengerjakan tugas web ya!";
+    }
+  </script>
 </body>
-</html>
+  </html>
