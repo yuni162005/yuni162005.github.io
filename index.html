@@ -1,125 +1,120 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tugas Pemrograman Web - Profil Mahasiswa</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f9;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background: #2563eb;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #2563eb;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      background: #2563eb;
-      color: white;
-    }
-    button {
-      background: #2563eb;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-      cursor: pointer;
-      margin-top: 15px;
-    }
-    button:hover {
-      background: #1e40af;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #eee;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming Assignment - Student Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #2563eb;
+            object-fit: cover;
+        }
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        .skills span {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2563eb;
+            color: white;
+            margin-top: 20px;
+        }
+        @media(max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Tugas Pemrograman Web</h1>
-    <p>Profil Mahasiswa & Jadwal Kuliah</p>
-  </header>
 
-  <div class="container">
-    <h2>Data Mahasiswa</h2>
-    <p><b>Nama:</b> Budi Santoso</p>
-    <p><b>NIM:</b> 12345678</p>
-    <p><b>Prodi:</b> Teknik Informatika</p>
-    <p><b>Universitas:</b> Universitas Semarang</p>
+    <header>
+        <h1>Web Programming Assignment</h1>
+        <p>Student Profile Page</p>
+    </header>
 
-    <h2>Daftar Mata Kuliah Semester Ini</h2>
-    <table>
-      <tr>
-        <th>No</th>
-        <th>Kode MK</th>
-        <th>Nama Mata Kuliah</th>
-        <th>SKS</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>IF101</td>
-        <td>Pemrograman Web</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>IF102</td>
-        <td>Basis Data</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>IF103</td>
-        <td>Struktur Data</td>
-        <td>3</td>
-      </tr>
-    </table>
+    <div class="container">
+        <div class="profile">
+            <img src="https://via.placeholder.com/150" alt="Student Photo">
+            <div>
+                <h2>John Doe</h2>
+                <p><b>Student ID:</b> 12345678</p>
+                <p><b>Major:</b> Informatics Engineering</p>
+                <p><b>University:</b> University of Example</p>
+                <p><b>Email:</b> johndoe@example.com</p>
+            </div>
+        </div>
 
-    <button onclick="sapa()">Klik Saya</button>
-    <p id="pesan"></p>
-  </div>
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a student who is interested in web development and UI/UX design. 
+            This page was created as part of my Web Programming course assignment to demonstrate 
+            basic HTML and CSS skills.
+        </p>
 
-  <footer>
-    <p>&copy; 2026 - Tugas Pemrograman Web</p>
-  </footer>
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>GitHub</span>
+            <span>Responsive Design</span>
+        </div>
 
-  <script>
-    function sapa() {
-      document.getElementById("pesan").innerText = "Semangat mengerjakan tugas web ya!";
-    }
-  </script>
+        <h2>Contact</h2>
+        <p>You can reach me on social media:</p>
+        <p>
+            <a href="#">Instagram</a> | 
+            <a href="#">LinkedIn</a> | 
+            <a href="#">GitHub</a>
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2026 Web Programming Assignment - Created by John Doe</p>
+    </footer>
+
 </body>
-  </html>
+</html>
